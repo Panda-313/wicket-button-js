@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Konto Kibica</title>
+
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script>
+        const requestUrl = 'https://legia-dev-profile.auth.eu-central-1.amazoncognito.com/oauth2/authorize?response_type=code&client_id=1qqhfsaqrsd6e1u7at200mg8s2&redirect_uri=https://dazzling-haibt-b5d2c9.netlify.app&state=STATE&scope=openid+profile+aws.cognito.signin.user.admin&identity_provider=Google';
+            fetch(requestUrl, {
+                headers: new Headers({
+                    'content-type': 'application/json',
+                    'Accept': '*/*',
+                })
+            }).then(response => {
+                console.log(response)
+            })
+    </script>
+</head>
+<body>
+</body>
+</html>
